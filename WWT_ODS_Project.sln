@@ -5,6 +5,8 @@ VisualStudioVersion = 17.11.35208.52
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "WWT_ODS_Project", "WWT_ODS_Project\WWT_ODS_Project.sqlproj", "{85456329-555B-43CF-AC02-4450DAB9E12D}"
 EndProject
+Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "ODS ETL", "..\ODS ETL\ODS ETL\ODS ETL.dtproj", "{71FB84DE-9657-443E-B00F-0D1FC6ECEEEE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,12 @@ Global
 		{85456329-555B-43CF-AC02-4450DAB9E12D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{85456329-555B-43CF-AC02-4450DAB9E12D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{85456329-555B-43CF-AC02-4450DAB9E12D}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{71FB84DE-9657-443E-B00F-0D1FC6ECEEEE}.Debug|Any CPU.ActiveCfg = Development
+		{71FB84DE-9657-443E-B00F-0D1FC6ECEEEE}.Debug|Any CPU.Build.0 = Development
+		{71FB84DE-9657-443E-B00F-0D1FC6ECEEEE}.Development|Any CPU.ActiveCfg = Development
+		{71FB84DE-9657-443E-B00F-0D1FC6ECEEEE}.Development|Any CPU.Build.0 = Development
+		{71FB84DE-9657-443E-B00F-0D1FC6ECEEEE}.Release|Any CPU.ActiveCfg = Development
+		{71FB84DE-9657-443E-B00F-0D1FC6ECEEEE}.Release|Any CPU.Build.0 = Development
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
