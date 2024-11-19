@@ -1,0 +1,27 @@
+﻿CREATE TABLE [dbo].[Employee] (
+    [ODS_Employee_ID]    SMALLINT      IDENTITY (1, 1) NOT NULL,
+    [Employee_Source_ID] VARCHAR (50)  NOT NULL,
+    [FirstName]          VARCHAR (50)  NOT NULL,
+    [LastName]           VARCHAR (50)  NOT NULL,
+    [Title]              VARCHAR (25)  NULL,
+    [IsActive]           BIT           NULL,
+    [Email]              VARCHAR (100) NULL,
+    [PhoneNumber]        VARCHAR (50)  NULL,
+    [Extension]          VARCHAR (4)   NULL,
+    [JobTitle]           VARCHAR (30)  NULL,
+    [BirthDate]          DATE          NULL,
+    [HireDate]           DATE          NULL,
+    [TerminationDate]    DATE          NULL,
+    [Address]            VARCHAR (60)  NULL,
+    [City]               VARCHAR (15)  NULL,
+    [StateOrRegion]      VARCHAR (15)  NULL,
+    [ZipCode]            VARCHAR (10)  NULL,
+    [Country]            VARCHAR (15)  NULL,
+    [Notes]              VARCHAR (MAX) NULL,
+    [ReportsTo]          INT           NULL,
+    [Store_Source_ID]    TINYINT       NULL,
+    [Created_Date]       DATETIME      NULL,
+    [Last_Update]        DATETIME      NULL,
+    PRIMARY KEY CLUSTERED ([ODS_Employee_ID] ASC)
+);
+

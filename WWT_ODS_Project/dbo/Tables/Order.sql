@@ -1,0 +1,25 @@
+﻿CREATE TABLE [dbo].[Order] (
+    [ODS_Order_ID]                INT          IDENTITY (1, 1) NOT NULL,
+    [Order_Source_ID]             INT          NOT NULL,
+    [ODS_Customer_ID]             INT          NOT NULL,
+    [ODS_Employee_ID]             SMALLINT     NOT NULL,
+    [OrderDate]                   DATE         NOT NULL,
+    [ShipDate]                    DATE         NULL,
+    [RequiredDate]                DATE         NULL,
+    [Freight]                     MONEY        NULL,
+    [CustomerPurchaseOrderNumber] VARCHAR (40) NULL,
+    [ShipName]                    VARCHAR (40) NULL,
+    [ShipAddressLine1]            VARCHAR (60) NULL,
+    [ShipAddressLine2]            VARCHAR (60) NULL,
+    [ShipCity]                    VARCHAR (50) NULL,
+    [ShipStateOrRegion]           VARCHAR (50) NULL,
+    [ShipZipCode]                 VARCHAR (50) NULL,
+    [ShipCountry]                 VARCHAR (15) NULL,
+    [Store_Source_ID]             TINYINT      NULL,
+    [Created_Date]                DATETIME     NULL,
+    [Last_Update]                 DATETIME     NULL,
+    PRIMARY KEY CLUSTERED ([ODS_Order_ID] ASC),
+    CONSTRAINT [FK_Order.ODS_Customer_ID] FOREIGN KEY ([ODS_Customer_ID]) REFERENCES [dbo].[Customer] ([ODS_Customer_ID]),
+    CONSTRAINT [FK_Order.ODS_Employee_ID] FOREIGN KEY ([ODS_Employee_ID]) REFERENCES [dbo].[Employee] ([ODS_Employee_ID])
+);
+
